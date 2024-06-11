@@ -1,0 +1,165 @@
+/* Reset the margin and padding for the entire document  */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Sets the font for the entire document */
+}
+
+/* Styles for the desktop container */
+.desktop {
+    position: relative; /* Allows for positioning child elements relative to this element */
+    width: 100vw; /* Sets the width to 100% of the viewport width */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+    background-color: #531371; /* Background color of the desktop */
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: center; /* Centers child elements vertically */
+}
+
+/* Styles for the frame2 container */
+.frame2 {
+    position: relative; /* Positions child elements relative to this element */
+    z-index: 1; /* Stacks this element above other elements with lower z-index */
+    width: 70%; /* Sets the width to 70% of the parent element */
+    max-width: 500px; /* Maximum width of 500px */
+    padding: 40px; /* Adds padding inside the element */
+    border-radius: 20px; /* Rounds the corners of the element */
+    background-color: #7B0166; /* Background color of the frame */
+    text-align: center; /* Centers text inside the element */
+    color: white; /* Text color */
+    overflow-y: auto; /* Adds vertical scrollbar if content overflows */
+    max-height: 80vh; /* Maximum height of 80% of the viewport height */
+}
+
+/* Reusable button styles */
+button {
+    padding: 10px 20px; /* Adds padding inside the button */
+    background-color: #fff; /* Background color of the button */
+    color: #4E116E; /* Text color of the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovered */
+    font-size: 16px; /* Sets the font size */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+    display: inline-block; /* Ensures buttons stay inline */
+}
+
+/* Changes the background color of the button when hovered */
+button:hover {
+    background-color: #250436; /* Background color on hover */
+}
+
+/* Styles for form groups */
+.form-group {
+    margin-bottom: 20px; /* Adds space below each form group */
+}
+
+/* Styles for form labels */
+.form-group label {
+    display: block; /* Makes the label a block element */
+    margin-bottom: 5px; /* Adds space below the label */
+    color: white; /* Label text color */
+}
+
+/* Styles for form inputs and selects */
+.form-group input,
+.form-group select {
+    width: 100%; /* Full width of the parent element */
+    padding: 10px; /* Adds padding inside the inputs/selects */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounds the corners */
+}
+
+/* Styles for FAQ section */
+.faq {
+    text-align: left; /* Aligns text to the left */
+    margin-top: 20px; /* Adds space above the FAQ section */
+}
+
+/* Specific styles for the Get Training page */
+.get-training-page .frame2 {
+    width: 90%; /* Sets the width to 90% of the parent element */
+    max-width: 1200px; /* Maximum width of 1200px */
+    height: 90vh; /* Sets the height to 90% of the viewport height */
+    padding: 20px; /* Adds padding inside the element */
+    text-align: left; /* Aligns text to the left */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    align-items: center; /* Centers child elements horizontally */
+    overflow: hidden; /* Hides overflow content */
+}
+
+/* Styles for the training header */
+.training-header {
+    padding: 20px; /* Adds padding inside the header */
+    background-color: #5e0a54; /* Background color of the header */
+    border-radius: 20px 20px 0 0; /* Rounds the top corners of the header */
+    font-size: 24px; /* Sets the font size */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Centers the text */
+    width: 100%; /* Full width of the parent element */
+}
+
+/* Styles for the training content */
+.training-content {
+    flex: 1; /* Allows the content to grow and fill available space */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    width: 100%; /* Full width of the parent element */
+    overflow: hidden; /* Hides overflow content */
+}
+
+/* Styles for the training grid */
+.training-grid {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Spaces out child elements */
+    gap: 20px; /* Adds space between child elements */
+    flex-wrap: wrap; /* Wraps child elements to the next line */
+    margin-top: 20px; /* Adds space above the grid */
+    width: 100%; /* Full width of the parent element */
+    padding: 0 20px; /* Adds padding on the left and right */
+}
+
+/* Styles for each training item */
+.training-item {
+    flex: 1; /* Allows the item to grow and fill available space */
+    min-width: 200px; /* Minimum width of 200px */
+    max-width: 300px; /* Maximum width of 300px */
+    background-color: #5e0a54; /* Background color of the item */
+    border-radius: 10px; /* Rounds the corners */
+    overflow: hidden; /* Hides overflow content */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for transform and background color changes */
+    text-align: center; /* Centers the text */
+    padding: 10px; /* Adds padding inside the item */
+}
+
+/* Styles for images inside training items */
+.training-item img {
+    width: 70%; /* Sets the width to 70% of the parent element */
+    border-radius: 10px; /* Rounds the corners of the image */
+    transition: transform 0.3s; /* Smooth transition for transform changes */
+}
+
+
+/* Changes the background color and position of training items when hovered */
+.training-item:hover {
+    background-color: #250436; /* Background color on hover */
+    transform: translateY(-5px); /* Moves the item up on hover */
+}
+
+/* Scales the image inside training items when hovered */
+.training-item:hover img {
+    transform: scale(1.05); /* Enlarges the image on hover */
+}
+
+/* Styles for the training title */
+.training-title {
+    margin-top: 10px; /* Adds space above the title */
+    font-size: 18px; /* Sets the font size */
+}
+
+/* Styles for the button container */
+.button-container {
+    margin-top: 10px; /* Adds space above the container */
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-around; /* Spaces out child elements */
+}

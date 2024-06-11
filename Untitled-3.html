@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Preferences</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="desktop">
+        <div class="frame2">
+            <h2>Set Your Preferred Language, Time Zone, and Notification Preferences</h2>
+            <!-- Secondary heading introducing the preferences form -->
+            <form>
+                <div class="form-group">
+                    <label for="language">Preferred Language</label>
+                    <select id="language" name="language">
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="arabic">Arabic</option>
+                        <option value="hindi">Hindi</option>
+                    </select>
+                </div>
+                <!-- Form field for language preference -->
+                <div class="form-group">
+                    <label for="timezone">Time Zone</label>
+                    <select id="timezone" name="timezone">
+                        <option value="utc">UTC (Coordinated Universal Time)</option>
+                        <option value="gmt">GMT (Greenwich Mean Time)</option>
+                        <option value="est">EST (Eastern Standard Time)</option>
+                        <option value="pst">PST (Pacific Standard Time)</option>
+                        <option value="cst">CST (Central Standard Time)</option>
+                        <option value="asia_tokyo">Asia/Tokyo</option>
+                    </select>
+                </div>
+                <!-- Form field for time zone selection -->
+                <div class="form-group">
+                    <label>Notification Preferences</label>
+                    <div>
+                        <input type="checkbox" id="email" name="notification" value="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sms" name="notification" value="sms">
+                        <label for="sms">SMS</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="push" name="notification" value="push">
+                        <label for="push">Push Notification</label>
+                    </div>
+                </div>
+                <!-- Form field for notification preferences -->
+            </form>
+            <a href="Untitled-2.html"><button>Back</button></a>
+            <!-- Link to go back to the previous step with a button -->
+            <button>Save Preferences</button>
+            <!-- Button to save preferences  -->
+            <a href="Untitled-4.html"><button>Next</button></a>
+            <!-- Link to proceed to the next step with a button -->
+        </div>
+    </div>
+</body>
+</html>
